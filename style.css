@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    Font-family: 'karla', serif;
+    background-color: #c94e88;
+    color: #5c5a5a;
+}
+
+.container {
+    max-width: 400px;
+    max-height: 600px;
+    height: 70%;
+    margin: 50px auto;
+    padding: 15px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.profile .title{
+    text-decoration: wavy underline #c94e88;
+    font-weight: 500;
+    margin-bottom: 10px;
+    animation: wavy-underline 5s infinite;
+}
+
+@keyframes wavy-underline {
+    0%, 100% {
+        text-decoration: none;
+    }
+    50% {
+        text-decoration: wavy underline #c94e88;
+    }
+}
+.profile-picture{
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid #c94e88;
+    padding: 5px;
+}
+
+#currentTime{
+    color: whitesmoke;
+    background-color: #c94e88;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding:10px 12px;
+    box-shadow: 0 0 5px rgba(19, 19, 19, 0.1);
+}
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.about .location{
+ font-weight: 600;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.address{
+    color: whitesmoke;
+    background-color: #c94e88;
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    padding:5px 10px;
+    box-shadow: 0 0 5px rgba(19, 19, 19, 0.1);
+}
+
+.social-links li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 5px;
+}
+
+.social-links img {
+    width: 20px;
+    margin: 0 2px;
+}
+
+@media(max-width: 425px) {
+    
+    .container {
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    h2, p {
+        text-align: center;
+    }
+    .profile-picture{
+        width: 150px;
+    }
+    
+}

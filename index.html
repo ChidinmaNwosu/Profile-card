@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi's Profile</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Karla:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <section class="profile">
+        <img
+          src="/public/chi-baby.JPG"
+          alt="Chi's Profile Picture"
+          data-testid="profilePicture"
+          class="profile-picture"
+        />
+        <h2 data-testid="fullName">Chidinma Nwosu</h2>
+        <p data-testid="jobTitle" class="title">Frontend Engineer</p>
+        <p id="currentTime" data-testid="currentTimeUTC"></p>
+      </section>
+      <section class="about">
+        <p data-testid="shortBio">
+          Hi, I'm Chi! I&apos;m a Frontend engineer. I love to code and build
+          things. I'm passionate about technology and I&apos;m always looking
+          for ways to improve my skills.
+        </p>
+        <p data-testid="currentLocation" class="location">ABUJA, NIGERIA</p>
+      </section>
+      <section class="contact">
+        <p data-testid="emailAddress" class="address">
+          chidinmaifynwosu@gmail.com
+        </p>
+        <ul data-testid="socialLinks" class="social-links">
+          <li>
+            <a href="https://www.linkedin.com/in/chidinma-nwosu-484155236/" target="_blank">
+              <img src="/public/linkedin.svg" alt="LinkedIn Profile" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/ChidinmaNwosu" target="_blank">
+              <img src="/public/github.svg" alt="GitHub Profile" />
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/@chidinmaifynwosu" target="_blank">
+              <img src="/public/medium.svg" alt="Medium Profile" />
+            </a>
+          </li>
+       
+        </ul>
+      </section>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>
